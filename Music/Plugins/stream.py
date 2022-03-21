@@ -200,7 +200,7 @@ async def vplay(c: Client, message: Message):
 💡 **Trek ditambahkan ke antrian**
 
 🏷 **Nama:** [{songname[:999]}]({link})
-🎧 **Atas permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
 #️⃣ **Posisi antrian** {pos}
 """,
@@ -231,7 +231,7 @@ async def vplay(c: Client, message: Message):
 ▶️ **Streaming video dimulai**
 
 🏷 **Nama:** [{songname[:999]}]({link})
-🎧 **Atas permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
 💬 **Diputar di:** {message.chat.title}
 """,
@@ -273,7 +273,7 @@ async def vplay(c: Client, message: Message):
 
 🏷 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
-🎧 **Atas permintaan:** {requester}
+🎧 **Permintaan:** {requester}
 
 #️⃣ **Posisi antrian** {pos}
 """,
@@ -302,7 +302,7 @@ async def vplay(c: Client, message: Message):
 
 🏷 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
-🎧 **Atas permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
 💬 **Diputar di:** {message.chat.title}
 """,
