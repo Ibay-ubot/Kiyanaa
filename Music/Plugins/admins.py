@@ -155,7 +155,7 @@ async def stop_cmd(_, message):
             pass                        
         await remove_active_chat(chat_id)
         await music.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text(f"**🎧 Obrolan Suara Berakhir/Dihentikan {checking}!**") 
+        await message.reply_text(f"**✅ Music telah terputus dari obrolan suara {checking}!**") 
     else:
         return await message.reply_text("Saya tidak berpikir jika ada sesuatu yang diputar di obrolan suara")
     
@@ -263,7 +263,7 @@ async def stop_cmd(_, message):
 
 <b>🏷 Nama:</b>[{title[:25]}]({url})
 <b>⏱️ Durasi:</b> {duration}
-<b>🎧 Atas permintaan:</b> {semx.mention}
+<b>📍 Permintaan:</b> {semx.mention}
 """
                     ),
                 )
@@ -300,7 +300,7 @@ async def stop_cmd(_, message):
 
 <b>🏷️ Nama:</b> {title}
 <b>⏱️ Durasi:</b> {duration}
-<b>🎧 Atas permintaan</b> {username}
+<b>📍 Permintaan</b> {username}
 """,
                 )
                 return
