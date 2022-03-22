@@ -191,7 +191,7 @@ Downloading....
                 caption=f"""
 <b>▶️ Sekarang memutar:</b> {title}
 <b>⌚ Durasi:</b> {duration}
-<b>🎧 Atas permintaan:</b> {username}
+<b>📍 Permintaan:</b> {username}
 """,
                 )
                 return
