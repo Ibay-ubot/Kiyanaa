@@ -273,7 +273,7 @@ async def vplay(c: Client, message: Message):
 
 🏷 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
-🎧 **Permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
 #️⃣ **Posisi antrian** {pos}
 """,
