@@ -298,13 +298,13 @@ async def vplay(c: Client, message: Message):
                             await message.reply_photo(
                                 photo="cache/IMG_20211230_211039_090.jpg",
                                 caption=f"""
-▷ **Memutar video dimulai**
+▶️ **Memutar video dimulai**
 
 🏷 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
 📍 **Permintaan:** {requester}
 
-💬 **Diputar di:** {message.chat.title}
+🎬 **Diputar di:** {message.chat.title}
 """,
                                 reply_markup=keyboard,
                             )
