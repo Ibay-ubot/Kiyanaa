@@ -718,7 +718,7 @@ async def startyuplay(_, CallbackQuery):
 <b>💡</b> [More Information](https://t.me/{BOT_USERNAME}?start=info_{id})
 <b>📍 Permintaan:</b> {checking}
 
-<b🍁 Antrian</b> {position}
+<b>⭐ Antrian</b> {position}
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
