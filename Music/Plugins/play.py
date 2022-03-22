@@ -525,6 +525,8 @@ Saya perlu menjadi admin dengan beberapa izin:
 <b>🏷️ Nama: [{title[:25]}]({link})</b>
 <b>⏱️ Durasi:</b> {duration} \n
 <b>📍 Permintaan: </b>{checking}
+
+<b>⭐ Antrian</b> {position}
 """,
         )
         return await mystic.delete()
