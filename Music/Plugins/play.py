@@ -528,6 +528,7 @@ Saya perlu menjadi admin dengan beberapa izin:
 
 <b>⭐ Antrian</b> {position}
 """,
+            reply_markup=InlineKeyboardMarkup(buttons),
         )
         return await mystic.delete()
     else:
