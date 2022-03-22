@@ -333,7 +333,7 @@ Gagal mengunduh video ini.
 
 <b>🏷 Nama: </b>[{title[:25]}]({url})
 <b>⏱️ Durasi: :</b> {duration}
-<b>🎧 Atas permintaan:</b> {semx.mention}
+<b>📍 Permintaan:</b> {semx.mention}
 """
                     ),
                 )
@@ -378,7 +378,7 @@ Gagal mengunduh video ini.
 
 <b>🏷️ Nama:</b> {title}
 <b>⌚ Durasi</b> {duration}
-<b>🎧 Atas permintaan:</b> {username}
+<b>📍 Permintaan:</b> {username}
 """,
                 )
                 return
