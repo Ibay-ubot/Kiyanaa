@@ -520,13 +520,11 @@ Jadikan saya admin dengan beberapa izin✅
         await message.reply_photo(
             photo=thumb,
             caption=f"""
-<b>💡 Trek ditambahkan ke antrian</b>
+<b>🎶 ANTRIAN</b> {position}
 
 <b>🏷️ Nama: [{title[:25]}]({link})</b>
 <b>⏱️ Durasi:</b> {duration} \n
 <b>📍 Permintaan: </b>{checking}
-
-<b>⭐ Antrian</b> {position}
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
