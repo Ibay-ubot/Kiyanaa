@@ -520,11 +520,11 @@ Jadikan saya admin dengan beberapa izin✅
         await message.reply_photo(
             photo=thumb,
             caption=f"""
-<b>🎶 ANTRIAN</b> {position}
-
 <b>🏷️ Nama: [{title[:25]}]({link})</b>
 <b>⏱️ Durasi:</b> {duration} \n
 <b>📍 Permintaan: </b>{checking}
+    
+<b>🎶 ANTRIAN</b> {position}
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -709,14 +709,12 @@ async def startyuplay(_, CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
             photo=thumb,
             caption=f"""
-<b>💡 Trek ditambahkan ke antrian</b>
-
 <b>🏷 Nama:</b>[{title[:25]}]({url})
 <b>⏱️ Durasi:</b> {duration}
 <b>💡</b> [More Information](https://t.me/{BOT_USERNAME}?start=info_{id})
 <b>📍 Permintaan:</b> {checking}
 
-<b>⭐ Antrian</b> {position}
+<b>🎶 ANTRIAN</b> {position}
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
