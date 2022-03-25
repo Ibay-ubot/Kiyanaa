@@ -351,3 +351,84 @@ def private_panel():
             ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
+def setting_markup():
+    buttons = [
+        [
+            InlineKeyboardButton(text="🔈 ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"),
+            InlineKeyboardButton(text="🎚 ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="AV"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="👥 ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs", callback_data="AU"
+            ),
+            InlineKeyboardButton(
+                text="💻 ᴅᴀsʜʙᴏᴀʀᴅ", callback_data="Dashboard"
+            ),
+        ],
+        [
+            InlineKeyboardButton(text="✖️ ᴄʟᴏsᴇ", callback_data="close"),
+        ],
+    ]
+    return f"🔧  **{BOT_NAME} Settings**", buttons
+
+
+def volmarkup():
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="🔄 ʀᴇsᴇᴛ ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ 🔄", callback_data="HV"
+            )
+        ],
+        [
+            InlineKeyboardButton(text="🔈 ʟᴏᴡ ᴠᴏʟ", callback_data="LV"),
+            InlineKeyboardButton(text="🔉 ᴍᴇᴅɪᴜᴍ ᴠᴏʟ", callback_data="MV"),
+        ],
+        [
+            InlineKeyboardButton(text="🔊 ʜɪɢʜ ᴠᴏʟ", callback_data="HV"),
+            InlineKeyboardButton(text="🔈 ᴀᴍᴘʟɪғɪᴇᴅ ᴠᴏʟ", callback_data="VAM"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🔽 ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔽", callback_data="Custommarkup"
+            )
+        ],
+        [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
+    ]
+    return f"🔧  **{BOT_NAME} Settings**", buttons
+
+
+def custommarkup():
+    buttons = [
+        [
+            InlineKeyboardButton(text="+10", callback_data="PTEN"),
+            InlineKeyboardButton(text="-10", callback_data="MTEN"),
+        ],
+        [
+            InlineKeyboardButton(text="+25", callback_data="PTF"),
+            InlineKeyboardButton(text="-25", callback_data="MTF"),
+        ],
+        [
+            InlineKeyboardButton(text="+50", callback_data="PFZ"),
+            InlineKeyboardButton(text="-50", callback_data="MFZ"),
+        ],
+        [InlineKeyboardButton(text="🔼 ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔼", callback_data="AV")],
+    ]
+    return f"🔧  **{BOT_NAME} Settings**", buttons
+
+
+def usermarkup():
+    buttons = [
+        [
+            InlineKeyboardButton(text="👥 ᴇᴠʀʏᴏɴᴇ", callback_data="EVE"),
+            InlineKeyboardButton(text="🙍 ᴀᴅᴍɪɴs", callback_data="AMS"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="📋 ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀ ʟɪsᴛ", callback_data="USERLIST"
+            )
+        ],
+        [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
+    ]
+    return f"🔧  **{BOT_NAME} Settings**", buttons
+
+
