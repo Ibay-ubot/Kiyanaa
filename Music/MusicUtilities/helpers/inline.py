@@ -240,7 +240,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢ", callback_data="settingm"
                 )
             ],
         ]
@@ -249,7 +249,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢ", callback_data="settingm"
                 )
             ],
             [
@@ -263,7 +263,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢ", callback_data="settingm"
                 )
             ],
             [
@@ -277,7 +277,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢ", callback_data="settingm"
                 )
             ],
             [
@@ -369,7 +369,7 @@ def setting_markup():
             InlineKeyboardButton(text="✖️ ᴄʟᴏsᴇ", callback_data="close"),
         ],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Setting**", buttons
 
 
 def volmarkup():
@@ -394,7 +394,7 @@ def volmarkup():
         ],
         [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Setting**", buttons
 
 
 def custommarkup():
@@ -413,7 +413,7 @@ def custommarkup():
         ],
         [InlineKeyboardButton(text="🔼 ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔼", callback_data="AV")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Setting**", buttons
 
 
 def usermarkup():
@@ -429,7 +429,7 @@ def usermarkup():
         ],
         [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Setting**", buttons
 
 def dashmarkup():
     buttons = [
@@ -443,7 +443,7 @@ def dashmarkup():
         ],
         [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Setting**", buttons
 
 
 stats1 = InlineKeyboardMarkup(
