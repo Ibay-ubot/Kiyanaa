@@ -240,7 +240,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
         ]
@@ -249,12 +249,12 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="✨ ᴋɪʏᴀɴᴀ", url=f"https://t.me/Rendraonebot"
                 ),
             ],
         ]
@@ -263,7 +263,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
             [
@@ -277,7 +277,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
             [
@@ -285,7 +285,7 @@ def start_pannel():
                     text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="✨ ᴋɪʏᴀɴᴀ", url=f"https://t.me/Rendraonebot"
                 ),
             ],
         ]
@@ -313,7 +313,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="✨ ᴋɪʏᴀɴᴀ", url=f"https://t.me/Rendraonebot"
                 ),
             ],
         ]
@@ -346,7 +346,7 @@ def private_panel():
                     text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="✨ ᴋɪʏᴀɴᴀ", url=f"https://t.me/Rendraonebot"
                 ),
             ],
         ]
@@ -371,7 +371,7 @@ def setting_markup():
             InlineKeyboardButton(text="✖️ ᴄʟᴏsᴇ", callback_data="close"),
         ],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Settings**", buttons
 
 
 def volmarkup():
@@ -396,7 +396,7 @@ def volmarkup():
         ],
         [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Settings**", buttons
 
 
 def custommarkup():
@@ -415,7 +415,7 @@ def custommarkup():
         ],
         [InlineKeyboardButton(text="🔼 ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔼", callback_data="AV")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Settings**", buttons
 
 
 def usermarkup():
@@ -431,7 +431,7 @@ def usermarkup():
         ],
         [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Settings**", buttons
 
 
 def dashmarkup():
@@ -446,7 +446,7 @@ def dashmarkup():
         ],
         [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"⚙️  **{BOT_NAME} Settings**", buttons
 
 
 stats1 = InlineKeyboardMarkup(
