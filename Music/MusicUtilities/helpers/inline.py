@@ -15,7 +15,7 @@ def play_markup(videoid, user_id):
             InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"),
         ],
         [      
-               InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data=f"close"),
+               InlineKeyboardButton(text="🗑️ᴄʟᴏsᴇ", callback_data=f"close"),
         ],
     ]
     return buttons
@@ -355,7 +355,7 @@ def setting_markup():
     buttons = [
         [
             InlineKeyboardButton(text="🔈 ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"),
-            InlineKeyboardButton(text="🎚 ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="AV"),
+            InlineKeyboardButton(text="🎵 ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="AV"),
         ],
         [
             InlineKeyboardButton(
