@@ -520,13 +520,12 @@ Saya perlu menjadi admin dengan beberapa izin:
         await message.reply_photo(
             photo=thumb,
             caption=f"""
-<b>💡 Trek ditambahkan ke antrian</b>
 
 <b>🏷️ Nama: [{title[:25]}]({link})</b>
 <b>⏱️ Durasi:</b> {duration} \n
-<b>🎧 Atas permintaan: </b>{checking}
+<b>🎧 Permintaan: </b>{checking}
 
-<b>#️⃣ Posisi antrian</b> {position}
+<b>🎶 ANTRIAN</b> {position}
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -563,7 +562,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             caption=f"""
 <b>🏷 Nama:</b> [{title[:25]}]({link})
 <b>⏱️ Durasi:</b> {duration}
-<b>🎧 Atas permintaan:</b> {checking}
+<b>🎧 Permintaan:</b> {checking}
 """,
         )
         return await mystic.delete()
@@ -711,14 +710,13 @@ async def startyuplay(_, CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
             photo=thumb,
             caption=f"""
-<b>💡 Trek ditambahkan ke antrian</b>
 
 <b>🏷 Nama:</b>[{title[:25]}]({url})
 <b>⏱️ Durasi:</b> {duration}
 <b>💡</b> [More Information](https://t.me/{BOT_USERNAME}?start=info_{id})
 <b>🎧 Atas permintaan:</b> {checking}
 
-<b>#️⃣ Posisi antrian</b> {position}
+<b>🎶 ANTRIAN</b> {position}
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -745,7 +743,7 @@ async def startyuplay(_, CallbackQuery):
 <b>🏷 Nama:</b> [{title[:25]}]({url})
 <b>⏱️ Durasi:</b> {duration}
 <b>💡</b> [More Information](https://t.me/{BOT_USERNAME}?start=info_{id})
-<b>🎧 Atas permintaan:</b> {checking}
+<b>🎧 Permintaan:</b> {checking}
 """,
         )
         os.remove(thumb)
