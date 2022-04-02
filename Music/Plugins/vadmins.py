@@ -40,9 +40,9 @@ async def cbmenu(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("▢", callback_data="cbstop"),
-                    InlineKeyboardButton("II", callback_data="cbpause"),
-                    InlineKeyboardButton("▷", callback_data="cbresume"),
+                    InlineKeyboardButton("⏹️", callback_data="cbstop"),
+                    InlineKeyboardButton("⏸️", callback_data="cbpause"),
+                    InlineKeyboardButton("▶️", callback_data="cbresume"),
                 ],
                 [
                     InlineKeyboardButton("🔇", callback_data="cbmute"),
@@ -96,7 +96,7 @@ async def skip(client, m: Message):
 ⏭️ **Memutar {op[2]} selanjutnya**
 
 🏷 **Nama:** [{op[0]}]({op[1]})
-🎧 **Atas permintaan:** {m.from_user.mention()}
+📍 **Permintaan:** {m.from_user.mention()}
 """,
                 disable_web_page_preview=True,
                 reply_markup=keyboard,
@@ -127,7 +127,7 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("✅ **Streaming telah berakhir.**")
+            await m.reply("✅ **Streaming telah berakhir**")
         except Exception as e:
             await m.reply(f"**Error:**\n\n`{e}`")
     else:
@@ -142,7 +142,7 @@ async def pause(client, m: Message):
         try:
             await call_py.pause_stream(chat_id)
             await m.reply(
-                "II **Video dijeda.**\n\n• **Untuk melanjutkan video, gunakan Perintah** » /vresume"
+                "⏸️ **Video dijeda.**\n\n• **Untuk melanjutkan video, gunakan Perintah** » /vresume"
             )
         except Exception as e:
             await m.reply(f"**Error:**\n\n`{e}`")
@@ -238,7 +238,7 @@ async def cbresume(_, query: CallbackQuery):
         try:
             await call_py.resume_stream(chat_id)
             await query.edit_message_text(
-                "▷ Streaming telah dilanjutkan", reply_markup=bttn
+                "▶️ Streaming telah dilanjutkan", reply_markup=bttn
             )
         except Exception as e:
             await query.edit_message_text(f"**Error:**\n\n`{e}`", reply_markup=bcl)
