@@ -197,12 +197,10 @@ async def vplay(c: Client, message: Message):
                 await message.reply_photo(
                     photo="cache/IMG_20220402_084302.jpg",
                     caption=f"""
-💡 **Trek ditambahkan ke antrian**
-
 🏷 **Nama:** [{songname[:999]}]({link})
-🎧 **Atas permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
-#️⃣ **Posisi antrian** {pos}
+🎶 **ANTRIAN** {pos}
 """,
                     reply_markup=keyboard,
                 )
@@ -231,9 +229,9 @@ async def vplay(c: Client, message: Message):
 ▶️ **Streaming video dimulai**
 
 🏷 **Nama:** [{songname[:999]}]({link})
-🎧 **Atas permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
-💬 **Diputar di:** {message.chat.title}
+🎬 **Memutar di:** {message.chat.title}
 """,
                     reply_markup=keyboard,
                 )
@@ -273,9 +271,9 @@ async def vplay(c: Client, message: Message):
 
 🏷 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
-🎧 **Atas permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
-#️⃣ **Posisi antrian** {pos}
+🎶 **ANTRIAN** {pos}
 """,
                             reply_markup=keyboard,
                         )
@@ -298,13 +296,13 @@ async def vplay(c: Client, message: Message):
                             await message.reply_photo(
                                 photo="cache/IMG_20220402_084302.jpg",
                                 caption=f"""
-▷ **Memutar video dimulai**
+▶️ **Memutar video dimulai**
 
 🏷 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
-🎧 **Atas permintaan:** {requester}
+📍 **Permintaan:** {requester}
 
-💬 **Diputar di:** {message.chat.title}
+🎬 **Memutar di:** {message.chat.title}
 """,
                                 reply_markup=keyboard,
                             )
