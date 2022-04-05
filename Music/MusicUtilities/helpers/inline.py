@@ -11,12 +11,13 @@ from Music.config import GROUP, CHANNEL
 def play_markup(videoid, user_id):
     buttons = [
         [
+            InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data=f"close"),
             InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"),
         ],
         [      
-               InlineKeyboardButton(text="🗑️ᴄʟᴏsᴇ", callback_data=f"close"),
+         
         ],
-    ]
+    ]         
     return buttons
 
 
