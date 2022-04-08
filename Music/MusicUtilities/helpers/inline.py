@@ -11,7 +11,7 @@ from Music.config import GROUP, CHANNEL
 def play_markup(videoid, user_id):
     buttons = [
         [
-            InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data=f"close"),
+            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/kiyanaachannel"),
             InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"),
         ],
         [      
